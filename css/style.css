@@ -1,0 +1,96 @@
+    h1 {
+        color: white;
+    }
+    
+    contato-area-left {
+        min-height: 300px;
+        padding-top: 100px;
+    }
+    
+    .contato-area-left p {
+        font-size: 1.6rem;
+    }
+    
+    .contato-area-left button {
+        color: black;
+        background-color: #FDD67D;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        border-radius: 0;
+        height: 50px;
+        width: 200px;
+        font-size: 1.3rem;
+    }
+    
+    .contato-area form {
+        background-color: #E0D1D0;
+    }
+    
+    .contato-area form input {
+        background: none;
+        border: 2px solid #797979;
+    }
+    
+    .contato-area form placeholder {
+        color: #797979;
+    }
+    
+    .contato-area form textarea {
+        background: none;
+        border: 2px solid #797979;
+        min-height: 300px;
+    }
+    
+    .form-check {
+        display: block;
+        min-height: 1.5rem;
+        padding-left: 2em;
+        margin-bottom: .125rem;
+    }
+    
+    .form-check-input[type=checkbox] {
+        border-radius: 0px;
+    }
+    
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #707070;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border: 2px solid #797979;
+        color: #707070;
+    }
+    
+    .form-check-input:focus {
+        box-shadow: none;
+        background-color: #F8F8F8;
+        border-color: #F8F8F8;
+    }
+    /* contato-area /
+/ contact-us-area */
+    
+    .contato-area {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #F8F8F8;
+    }
+    
+    .btn.enviar {
+        background-color: #F8F8F8;
+    }
