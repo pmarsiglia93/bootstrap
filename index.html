@@ -191,34 +191,44 @@
 
                         <p>São Paulo - SP</p>
 
-                        <p>Telefone: (00) 0000-0000</p>
+                        <p>Telefone: (12) 3456-7890</p>
                     </div>
 
-                    <div class="col-md-7 contato-area-right ">
-                        <form class=" row g-3 p-5 ">
+                    <div class="col-md-7 contato-area-right bg-light ">
+                        <form class=" row g-3 p-5 bg-light">
+
+                            <!--Label do Nome-->
 
                             <div class="col-md-6 ">
-                                <input type="text " class="form-control bg-transparent " placeholder="Nome " aria-label="First name ">
+                                <label for="Nome"></label>
+                                <input type="text" id="nome" onkeyup="valorNome()" placeholder="Nome">
+                                <div id="txtNome"></div>
                             </div>
 
+                            <!--Label de Sobrenome-->
                             <div class="col-md-6 ">
-                                <input type="text " class="form-control bg-transparent " placeholder="Sobrenome" aria-label="Last name ">
+                                <label for="Sobrenome"></label>
+                                <input type="text" id="sobrenome" onkeyup="valorSobrenome()" placeholder="Sobrenome">
+                                <div id="txtSobrenome"></div>
                             </div>
 
+                            <!--Label de E-mail-->
+                            <div class="col-md-11">
+                                <label for="Email"></label>
+                                <input type="email" id="email" class="form-control" placeholder="E-mail"><br>
+                            </div>
+
+                            <!--Label de Assunto-->
                             <div class="col-12 ">
-                                <label for="inputEmail4 " class="form-label "></label>
-                                <input type="email " class="form-control bg-transparent " placeholder="E-mail " id="inputEmail4 ">
+                                <label for="assunto"></label>
+                                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()" placeholder="Assunto"></textarea>
+                                <div id="contador"></div>
+                                <div id="txtAssunto"></div>
                             </div>
 
-                            <div class="col-12 ">
-                                <label for="exampleFormControlTextarea1 " placeholder="texto " class="form-label "></label>
-                                <textarea class="form-control bg-transparent " id="exampleFormControlTextarea1" rows="3" placeholder="Assunto"></textarea>
-                            </div>
-
-                            <div>
-                                <button type="button" class="btn enviar">
-                                    Enviar
-                                </button>
+                            <!--Botão de Enviar-->
+                            <div class="container-fluid d-flex justify-content-end">
+                                <button>Enviar</button>
                             </div>
 
                         </form>
@@ -281,8 +291,18 @@
 
     <!--CopyRight-->
     <!--JavaScript-->
+    <script src="js/script.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new TypeIt(".type-effect", {
+                strings: ["Vamos falar sobre o Paulo"],
+                loop: true
+            }).go()
+        });
+    </script>
 
 </body>
 
